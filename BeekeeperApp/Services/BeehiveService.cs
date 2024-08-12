@@ -6,32 +6,32 @@ namespace Services
 {
     public class BeehiveService : IBeehiveService
     {
-        public Beehive AddBeehive(Beehive beehive)
+        public BeehiveDto AddBeehive(Beehive beehive)
         {
             throw new NotImplementedException();
         }
 
-        public Beehive DeleteBeehive(Guid? id)
+        public BeehiveDto DeleteBeehive(Guid? id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Beehive> GetAllBeehives()
+        public List<BeehiveDto> GetAllBeehives()
         {
             throw new NotImplementedException();
         }
 
-        public Beehive? GetBeehiveByID(Beehive beehive)
+        public BeehiveDto? GetBeehiveByID(Beehive beehive)
         {
             throw new NotImplementedException();
         }
 
-        public List<Beehive> GetFilteredBeehive(string searchBy, string? searchString)
+        public List<BeehiveDto> GetFilteredBeehive(string searchBy, string? searchString)
         {
             throw new NotImplementedException();
         }
 
-        public Beehive UpdateBeehive(BeehiveDto beehiveDto)
+        public BeehiveDto UpdateBeehive(BeehiveDto beehiveDto)
         {
             throw new NotImplementedException();
         }

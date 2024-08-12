@@ -5,12 +5,12 @@ namespace ServiceContracts
 {
     public interface IBeehiveService
     {
-        Beehive AddBeehive(Beehive beehive);
-        Beehive DeleteBeehive(Guid? id);
-        List<Beehive> GetAllBeehives();
-        Beehive? GetBeehiveByID(Beehive beehive);
-        List<Beehive> GetFilteredBeehive(string searchBy, string? searchString);
-        Beehive UpdateBeehive(BeehiveDto beehiveDto);
+        BeehiveDto AddBeehive(Beehive beehive);
+        BeehiveDto DeleteBeehive(Guid? id);
+        List<BeehiveDto> GetAllBeehives();
+        BeehiveDto? GetBeehiveByID(Beehive beehive);
+        List<BeehiveDto> GetFilteredBeehive(string searchBy, string? searchString);
+        BeehiveDto UpdateBeehive(BeehiveDto beehiveDto);
 
     }
 }
