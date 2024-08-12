@@ -22,5 +22,7 @@ namespace ServiceContracts.DTOs
         [Required(ErrorMessage ="Price can't be blank")]
         [Range(1,9000)]
         public decimal Price { get; set; }
+
+        public string? Manufacturer { get; set; }
     }
 }

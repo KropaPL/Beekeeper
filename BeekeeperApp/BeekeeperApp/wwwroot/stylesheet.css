@@ -61,6 +61,17 @@
     cursor: pointer;
 }
 
+.search-button:hover {
+    transition: background-color 0.1s,
+    opacity 0.1s;
+    background-color: rgb(243, 212, 90);
+}
+
+.search-button:active {
+    opacity: 0.8;
+
+}
+
 .searchbarside {
     display: flex;
     flex-direction: row;
