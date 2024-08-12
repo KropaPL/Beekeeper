@@ -1,3 +1,36 @@
-﻿<div>
-    @RenderBody()
-</div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Stylesheet.css" rel="stylesheet" />
+    <link href="~/General.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="leftside-navbar">
+            <div class="logo-container">
+                <img class="logo" src="~/pics/logo.png" asp-append-version="true" />
+                <a class="home-name" asp-controller="Home" asp-action="Index">
+                    BEEKEEPER
+                </a>
+            </div>
+            <a class="menu-button" asp-controller="Beehive" asp-action="Index">Beehives</a>
+        </div>
+        <div class="searchbarside">
+            <input class="searchbar" type="text" placeholder="Search">
+            <button class="search-button">&#8618;</button>
+        </div>
+        <div class="rightside">
+            <button class="login menu-button">Login</button>
+            <button class="register menu-button">Register</button>
+        </div>
+    </div>
+
+    <div class="page-content">
+        @RenderBody()
+    </div>
+
+</body>
+</html>

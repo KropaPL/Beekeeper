@@ -1,3 +1,117 @@
-﻿.navbar{
-
+﻿.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 15px 10px;
+    background-color: rgb(250, 218, 94);
+    margin-bottom: 10px;
+    font-family: Arial;
+    font-size: 18px;
+    align-items: center;
+    color: rgb(85, 74, 31);
 }
+
+.home-name {
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 40px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.leftside-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.searchbar {
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    color: rgb(80, 80, 80);
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.search-button {
+    border: none;
+    background-color: rgb(250, 218, 94);
+    border-radius: 100%;
+    margin-left: -40px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.searchbarside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 70%;
+    margin: 0 20px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.menu-button {
+    border: none;
+    background-color: rgb(250, 218, 94);
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.15);
+    color: rgb(85, 74, 31);
+    transition: background-color 0.1s,
+    opacity 0.1s;
+}
+
+.menu-button:hover{
+    background-color: rgb(243, 212, 90);
+}
+
+.menu-button:active{
+    opacity: 0.8;
+}
+
+
+/* Reset for links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+        color: inherit;
+        font-weight: normal;
+    }
